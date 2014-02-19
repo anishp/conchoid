@@ -18,6 +18,9 @@ public:
     explicit Dialog(QWidget *parent = 0);
     ~Dialog();
 
+public slots:
+    void updateConchoid();
+
 private:
     Ui::Dialog *ui;
 
