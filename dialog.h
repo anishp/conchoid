@@ -2,6 +2,9 @@
 #define DIALOG_H
 
 #include <QDialog>
+#include <qmath.h>
+#include <QPointF>
+#include <QPainter>
 
 namespace Ui {
 class Dialog;
@@ -17,6 +20,10 @@ public:
 
 private:
     Ui::Dialog *ui;
+
+protected:
+    void paintEvent(QPaintEvent *);
+    void drawConchoid();
 };
 
 #endif // DIALOG_H
